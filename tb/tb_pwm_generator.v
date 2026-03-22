@@ -27,13 +27,13 @@ module tb_pwm_generator ();
 		$dumpfile("../sim/dump.vcd");
 		$dumpvars(0, tb_pwm_generator);
 		rst = 1'b1;
-		#10;
+		#10
 		rst = 1'b0;
 	       	#20
 		duty_cycle = 8'b01000000;
-		#100;
+		#510
 		duty_cycle = 8'b10000000;
-		#100
+		#510
 		rst = 1'b1;
 		#20
 		rst = 1'b0;
